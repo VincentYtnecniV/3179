@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 200,
+  "height": 120,  
+  "data": {"url": "who_life_exp.csv"},
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Global Region"
+    },
+    "x": {
+      "aggregate": "average",
+      "field": "life_exp60",
+      "type": "quantitative",
+      "title": "Average Life Expectancy over 60 years old"
+    }
+  }
+}
+
+  

@@ -1,0 +1,26 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 300,
+    "data": {"url": "who_life_exp.csv"},
+    "mark": "point",
+    "encoding": {
+      "x": {
+        "field": "alcohol",
+        "type": "quantitative",
+        "title": "Alcohol Consumption (litres)"
+      },
+      "y": {
+        "field": "life_expect",
+        "type": "quantitative",
+        "title": "Life Expectancy"
+      },
+      "color": {"field": "region", "type": "nominal", "title": "Region"},
+      "tooltip": [
+        {"field": "country", "type": "nominal", "title": "Country"},
+        {"field": "alcohol", "type": "quantitative", "title": "Alcohol Consumption"},
+        {"field": "life_expect", "type": "quantitative", "title": "Life Expectancy"}
+      ]
+    }
+  }
+  

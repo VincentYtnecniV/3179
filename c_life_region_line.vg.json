@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 180,
+  "data": {"url": "who_life_exp.csv"},
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "year", "type": "nominal", "title": "Year"},
+    "y": {"aggregate":"average","field": "life_expect", "type": "quantitative", "title": "Life Expectancy"},
+    "color": {"field": "region", "type": "nominal", "title": "Region"}
+  }
+}
+  

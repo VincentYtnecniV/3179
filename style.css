@@ -1,0 +1,30 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.visualization-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.visualizationmap {
+    width: 100%;
+    align-items: center;
+}
+.visualization {
+	height:inherit;
+	align-self:flex-start;
+}

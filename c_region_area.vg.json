@@ -1,0 +1,12 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 200,
+  "height": 120,
+  "data": {"url": "who_life_exp.csv"},
+  "mark": {"type": "area", "line": true},
+  "encoding": {
+    "x": {"field": "year", "type": "nominal", "title": "Year"},
+    "y": {"aggregate": "average", "field": "hepatitis", "type": "quantitative", "title": "Hepatitis B Immunization Coverage (%)"},
+    "facet": {"field": "region", "type": "nominal"}
+  }
+}

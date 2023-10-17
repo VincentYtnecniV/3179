@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 200,
+  "height": 120,
+  "data": {"url": "who_life_exp.csv"},
+  "mark": "boxplot",
+  "encoding": {
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Global Region"
+    },
+    "x": {
+      "aggregate": "average",
+      "field": "une_poverty",
+      "type": "quantitative",
+      "title": "Poverty Headcount Ratio (2016)"
+    }
+  }
+}
+
+  
